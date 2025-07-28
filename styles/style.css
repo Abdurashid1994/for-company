@@ -1,0 +1,585 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: rgb(5, 73, 100);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 430px) {
+  .container {
+    width: 95%;
+  }
+}
+.hidden {
+  display: none;
+}
+
+.activa {
+  display: block;
+}
+
+.header {
+  padding: 10px 10px;
+  background-color: white;
+}
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header ul li {
+  cursor: pointer;
+  margin: auto 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(5, 73, 100);
+}
+.header ul li:hover {
+  transform: scale(1.05);
+}
+.header ul li a {
+  padding: 10px 20px;
+  display: block;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: rgb(5, 73, 100);
+}
+.header ul .mahQowiw {
+  background-color: rgb(5, 73, 100);
+}
+.header ul .mahQowiw a {
+  color: white;
+}
+
+@media (max-width: 430px) {
+  .header {
+    padding: 5px 5px;
+  }
+  .header ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  .header ul li a {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  .header ul .mahQowiw {
+    display: inline-block;
+  }
+}
+.sehlar {
+  margin-top: 100px;
+}
+.sehlar-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.sehlar-cards-card {
+  background-color: white;
+  color: rgb(5, 73, 100);
+  padding: 15px;
+  border-radius: 15px;
+}
+.sehlar-cards-card a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.sehlar-cards-card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.sehlar-cards-card h3 {
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.sehlar-cards-card p {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.sehlar-cards .SqowiwCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  background-color: rgb(5, 73, 100);
+  color: white;
+}
+.sehlar-cards .SqowiwCard i {
+  font-size: 25px;
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 430px) {
+  .sehlar {
+    margin: 40px auto;
+  }
+  .sehlar-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  .sehlar-cards-card {
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .sehlar-cards-card h3 {
+    font-size: 18px;
+  }
+  .sehlar-cards-card p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+.addFile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.addFile-tittle {
+  padding: 25px 0;
+  text-transform: capitalize;
+  word-spacing: 15px;
+  color: white;
+}
+.addFile .adding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  background-color: white;
+  border-radius: 10px;
+}
+.addFile .adding input {
+  padding: 10px 15px;
+  margin: 20px 10px 10px 10px;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid rgb(5, 73, 100);
+}
+.addFile .adding-btn {
+  width: 50%;
+  margin: 15px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  text-transform: capitalize;
+  background-color: rgb(5, 73, 100);
+  color: white;
+}
+.addFile .adding-btn:hover {
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+@media (max-width: 430px) {
+  .addFile {
+    display: flex;
+    justify-content: unset;
+  }
+  .addFile-tittle {
+    margin: 30px auto;
+    word-spacing: 5px;
+    text-align: center;
+  }
+  .addFile .adding {
+    width: 80%;
+  }
+}
+.matryallar {
+  margin: 50px auto;
+}
+.matryallar-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.matryallar-cards-card {
+  background-color: white;
+  color: rgb(5, 73, 100);
+  padding: 15px;
+  border-radius: 15px;
+}
+.matryallar-cards-card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.matryallar-cards-card h3 {
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.matryallar-cards-card p {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.matryallar-cards .MqowiwCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  background-color: rgb(5, 73, 100);
+  color: white;
+}
+.matryallar-cards .MqowiwCard i {
+  font-size: 25px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.yoqalar {
+  margin: 100px auto;
+}
+.yoqalar-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.yoqalar-cards-card {
+  background-color: white;
+  color: rgb(5, 73, 100);
+  padding: 15px;
+  border-radius: 15px;
+}
+.yoqalar-cards-card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.yoqalar-cards-card h3 {
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.yoqalar-cards-card p {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.yoqalar-cards .YqowiwCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  background-color: rgb(5, 73, 100);
+  color: white;
+}
+.yoqalar-cards .YqowiwCard i {
+  font-size: 35px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+@media (max-width: 430px) {
+  .yoqalar {
+    margin: 50px auto;
+  }
+  .yoqalar-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.zamoklar {
+  margin-top: 100px;
+}
+.zamoklar-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.zamoklar-cards-card {
+  background-color: white;
+  color: rgb(5, 73, 100);
+  padding: 15px;
+  border-radius: 15px;
+}
+.zamoklar-cards-card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.zamoklar-cards-card h3 {
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.zamoklar-cards-card p {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.zamoklar-cards .ZqowiwCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  background-color: rgb(5, 73, 100);
+  color: white;
+}
+.zamoklar-cards .ZqowiwCard i {
+  font-size: 25px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+@media (max-width: 430px) {
+  .zamoklar {
+    margin: 50px auto;
+  }
+  .zamoklar-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.wowtepa {
+  color: white;
+  margin: 90px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.wowtepa a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.wowtepa-card {
+  border: 1px solid white;
+  padding: 15px 20px;
+  margin: 10px 10px;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+.wowtepa-card:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: 0.4s;
+  background-color: white;
+  color: rgb(5, 73, 100);
+}
+.wowtepa .Wqowiw {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.wowtepa .Wqowiw i {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+@media (max-width: 390px) {
+  .wowtepa {
+    margin: 50px auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .wowtepa-card {
+    margin: 5px;
+  }
+}
+.xasan {
+  color: white;
+  margin: 90px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.xasan a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.xasan-card {
+  border: 1px solid white;
+  padding: 15px 20px;
+  margin: 10px 10px;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+.xasan-card:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: 0.4s;
+  background-color: white;
+  color: rgb(5, 73, 100);
+}
+.xasan .Xqowiw {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.xasan .Xqowiw i {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+@media (max-width: 390px) {
+  .xasan {
+    margin: 50px auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .xasan-card {
+    margin: 5px;
+  }
+}
+.muxiddin {
+  color: white;
+  margin: 90px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.muxiddin a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.muxiddin-card {
+  border: 1px solid white;
+  padding: 15px 20px;
+  margin: 10px 10px;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+.muxiddin-card:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: 0.4s;
+  background-color: white;
+  color: rgb(5, 73, 100);
+}
+.muxiddin .Mqowiw {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.muxiddin .Mqowiw i {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+@media (max-width: 390px) {
+  .muxiddin {
+    margin: 50px auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .muxiddin-card {
+    margin: 5px;
+  }
+}
+.xabbillo {
+  color: white;
+  margin: 90px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.xabbillo a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.xabbillo-card {
+  border: 1px solid white;
+  padding: 15px 20px;
+  margin: 10px 10px;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+.xabbillo-card:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: 0.4s;
+  background-color: white;
+  color: rgb(5, 73, 100);
+}
+.xabbillo .xabiqowiw {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.xabbillo .xabiqowiw i {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+@media (max-width: 390px) {
+  .xabbillo {
+    margin: 50px auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .xabbillo-card {
+    margin: 5px;
+  }
+}
+.nihol {
+  color: white;
+  margin: 90px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.nihol a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.nihol-card {
+  border: 1px solid white;
+  padding: 15px 20px;
+  margin: 10px 10px;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+.nihol-card:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  transition: 0.4s;
+  background-color: white;
+  color: rgb(5, 73, 100);
+}
+.nihol .niholqowiw {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.nihol .niholqowiw i {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+@media (max-width: 390px) {
+  .nihol {
+    margin: 50px auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .nihol-card {
+    margin: 5px;
+  }
+}/*# sourceMappingURL=style.css.map */

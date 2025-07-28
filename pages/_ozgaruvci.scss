@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+$btnsColor: rgb(223, 162, 21);
+$borders: 1px solid rgb(221, 220, 220);
+$asosiyrang: rgb(5, 73, 100);
+
+
+body{
+    //   height: 100vh;
+    background-color: rgb(5, 73, 100);
+}
+
+.container{
+    width: 80%;
+    margin:  0 auto;
+    // border: 1px solid rgb(221, 220, 220);
+}
+
+@media(max-width: 430px){
+   .container{
+    width: 95%;
+   }
+}
+
+
+
+.hidden{
+    display: none;
+}
+
+.activa{
+    display: block;
+}

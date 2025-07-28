@@ -1,0 +1,73 @@
+.addFile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+
+    &-tittle{
+        padding: 25px 0;
+        text-transform: capitalize;
+        word-spacing: 15px;
+        color: white;
+    }
+
+
+    .adding{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 30%;
+        background-color: white;
+        border-radius: 10px;
+
+        input{
+            padding: 10px 15px;
+            margin: 20px 10px 10px 10px;
+            outline: none;
+            border-radius: 10px;
+            border: 2px solid rgb(5, 73, 100);
+        }
+
+        &-btn{
+            width: 50%;
+            margin: 15px auto;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            text-transform: capitalize;
+            background-color: rgb(5, 73, 100);
+            color: white;
+
+            &:hover{
+                cursor: pointer;
+                background-color: blue;
+                color: white;
+                transform: scale(1.05);
+                transition: 0.5s;
+            }
+        }
+       
+    }
+
+}
+
+@media(max-width: 430px){
+    .addFile{
+    display: flex;
+    justify-content: unset;    
+    
+    
+    &-tittle{
+        margin: 30px auto;
+        word-spacing: 5px;
+        text-align: center;
+    }
+
+    .adding{
+        width: 80%;
+    }
+
+    }
+}

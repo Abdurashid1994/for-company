@@ -1,0 +1,53 @@
+.xasan {
+    a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+    }
+    color: white;
+    margin: 90px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &-card {
+        border: 1px solid white;
+        padding: 15px 20px;
+        margin: 10px 10px;
+        border-radius: 10px;
+        text-transform: capitalize;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.02);
+            transition: 0.4s;
+            background-color: white;
+            color: $asosiyrang;
+        }
+
+    }
+
+    .Xqowiw {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+
+        i {
+            margin-top: 10px;
+            font-size: 25px;
+        }
+    }
+
+}
+
+@media(max-width: 390px){
+    .xasan{
+        margin: 50px auto;
+        grid-template-columns: repeat(2, 1fr);
+
+        &-card{
+            margin: 5px;
+        }
+    }
+}
