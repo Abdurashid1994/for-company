@@ -33,13 +33,12 @@ body {
   background-color: white;
 }
 .header ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 .header ul li {
   cursor: pointer;
-  margin: auto 5px;
+  margin: 10px 5px;
   border-radius: 5px;
   border: 1px solid rgb(5, 73, 100);
 }
@@ -53,16 +52,36 @@ body {
   font-weight: bold;
   color: rgb(5, 73, 100);
 }
-.header ul .mahQowiw {
+.header .mahQowiw {
   background-color: rgb(5, 73, 100);
+  width: 25%;
+  margin: 10px auto;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.header ul .mahQowiw a {
+.header .mahQowiw:hover {
+  background-color: white;
+  border: 1px solid rgb(5, 73, 100);
+  transform: scale(1.02);
+  transition: 0.5s;
+}
+.header .mahQowiw:hover a {
+  color: rgb(5, 73, 100);
+  font-weight: bold;
+}
+.header .mahQowiw a {
+  padding: 10px 15px;
   color: white;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
 @media (max-width: 430px) {
   .header {
     padding: 5px 5px;
+    justify-content: space-between;
   }
   .header ul {
     display: grid;
@@ -70,11 +89,14 @@ body {
     gap: 5px;
   }
   .header ul li a {
-    padding: 5px 10px;
+    padding: 10px 20px;
     font-size: 16px;
   }
-  .header ul .mahQowiw {
-    display: inline-block;
+  .header .mahQowiw {
+    width: 45%;
+  }
+  .header .mahQowiw a i {
+    display: none;
   }
 }
 .sehlar {
